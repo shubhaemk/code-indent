@@ -2,13 +2,22 @@
   "name": "indent",
   "version": "1.0.0",
   "description": "'Web app to indent given code'",
-  "main": "index.html",
+  "private": true,
   "scripts": {
+    "build": "webpack --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Shubham Kamath",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   }
