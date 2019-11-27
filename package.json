@@ -1,0 +1,15 @@
+{
+  "name": "indent",
+  "version": "1.0.0",
+  "description": "'Web app to indent given code'",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shubham Kamath",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
