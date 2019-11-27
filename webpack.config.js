@@ -45,7 +45,7 @@ let config = {
                         }
                     }
                 ]
-            }
+            },
         ]
     },
     plugins : [
@@ -55,7 +55,8 @@ let config = {
         }),
         new HtmlWebpackPlugin({
             template: './index.html',
-            filename: './index.html'
+            filename: './index.html',
+            favicon: './assets/favicon.ico'
         }),
     ],
     optimization: {
