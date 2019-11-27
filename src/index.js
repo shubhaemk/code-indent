@@ -7,7 +7,6 @@
     3. Assign each node a level without brackets
 
  */
-import '../index.css';
 
 //testing strings
 window.addEventListener('load',function(){
@@ -58,6 +57,13 @@ let y;        for(xda)
                     quoteFlag = !quoteFlag;
                 }
                 if (quoteFlag === false) {
+                    if (strCode[i] === '>') {
+                        let node = new Node(strTrim(strCode.slice(0, i+1)), level);
+                        NodeStack.push(node);
+                        strCode = strCode.slice(i + 1, strCode.length);
+                        break;
+                        console.log('here')
+                    }
                     if (strCode[i] === '{') {
                         let node = new Node(strTrim(strCode.slice(0, i)), level);
                         NodeStack.push(node);
