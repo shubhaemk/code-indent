@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="index.css">
         <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
-        <script src="index.js"></script>
+        <script src="./src/index.js"></script>
         <meta name="theme-color" content="#db5945">
     </head>
     <body>
@@ -53,9 +53,9 @@
                 <textarea class="textarea" rows="10" id="inputCode" placeholder="Enter Java or C code"></textarea>
             </div>
             <div class="column is-2 is-12-mobile button-area">
-                <button class="custom-button button is-primary is-normal is-outlined" onclick="indent()">Indent</button>
-                <button class="custom-button button is-primary is-normal is-outlined" onclick="reset()">Reset</button>
-                <button class="custom-button button is-primary is-normal is-outlined" onclick="textCopy()">Copy</button>
+                <button id="indentButton" class="custom-button button is-primary is-normal is-outlined">Indent</button>
+                <button id="resetButton" class="custom-button button is-primary is-normal is-outlined">Reset</button>
+                <button id="copyButton" class="custom-button button is-primary is-normal is-outlined"">Copy</button>
             </div>
             <div class="column is-5 is-12-mobile">
                 <textarea class="textarea" rows="10" id="outputCode" placeholder="Indented code"></textarea>
@@ -64,10 +64,10 @@
 
         <footer class="footer-disclaimer hero is-primary">
             <div class="footer-comments">
-                <span>Not supported as of now</span>
-                <span>1. Comments</span>
-                <span>2. Wrong code</span>
-                <span>3. Loops without curly brackets</span>
+                <span class="footer-comment">Not supported as of now</span>
+                <span class="footer-comment">1. Comments</span>
+                <span class="footer-comment">2. Wrong code</span>
+                <span class="footer-comment">3. Loops without curly brackets</span>
             </div>
         </footer>
     </body>
