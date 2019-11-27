@@ -10,3 +10,14 @@ Explore the app - [_Code Indenter Online_](https://shubhaemk.github.io/code-inde
 * Clone the repository
 * `npm install`
 * Run it using any web server.
+
+## Example 
+
+* Input some not so indented code.
+
+![Original Code](/Screenshots/original.png)
+
+* Output is indented code :gift:
+
+![Indented Code](/Screenshots/indented.png)
+
